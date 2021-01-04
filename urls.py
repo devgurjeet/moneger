@@ -12,7 +12,7 @@ api_urls = [
 
 urlpatterns = [
     url('api/', include(api_urls)),
-    path('', TemplateView.as_view(template_name="home.html"), name="home"),
+    url('', TemplateView.as_view(template_name="home.html"), name="home"),
 
 ] + aldryn_addons.urls.patterns() + i18n_patterns(
     # add your own i18n patterns here
