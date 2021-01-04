@@ -5,5 +5,5 @@ import aldryn_addons.urls
 
 urlpatterns = [
     # add your own patterns here
-] + + aldryn_addons.urls.patterns() 
+] + aldryn_addons.urls.patterns() 
 
