@@ -10,6 +10,7 @@
 # INSTALLED_ADDONS is a list of self-configuring Divio Cloud addons - see the
 # Addons view in your project's dashboard. See also the addons directory in 
 # this project, and the INSTALLED_ADDONS section in requirements.in.
+USE_I18N = False
 
 INSTALLED_ADDONS = [
     # Important: Items listed inside the next block are auto-generated.
@@ -44,7 +45,10 @@ aldryn_addons.settings.load(locals())
 # for guidance on managing these settings.
 
 INSTALLED_APPS.extend([
-    # Extend the INSTALLED_APPS setting by listing additional applications here
+    'rest_framework.authtoken',
+
+    'users',
+    'todos'
 ])
 
 # To see the settings that have been applied, use the Django diffsettings 
