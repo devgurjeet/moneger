@@ -10,6 +10,7 @@
 # INSTALLED_ADDONS is a list of self-configuring Divio Cloud addons - see the
 # Addons view in your project's dashboard. See also the addons directory in 
 # this project, and the INSTALLED_ADDONS section in requirements.in.
+USE_I18N = False
 
 INSTALLED_ADDONS = [
     # Important: Items listed inside the next block are auto-generated.
