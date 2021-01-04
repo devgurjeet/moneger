@@ -45,6 +45,8 @@ aldryn_addons.settings.load(locals())
 # for guidance on managing these settings.
 
 INSTALLED_APPS.extend([
+    'rest_framework.authtoken',
+
     'users',
     'todos'
 ])
